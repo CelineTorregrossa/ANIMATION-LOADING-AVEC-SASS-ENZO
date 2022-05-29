@@ -1,0 +1,128 @@
+@charset "UTF-8";
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  background-color: #222;
+}
+
+h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+h1 span {
+  margin: 0 10px;
+  font-size: calc(5vmin + 10px);
+  /* pour un résultat responsive : 5vmin = 5% de la hauteur en mode grand écran car c'est la largeur qui est plus importante dans ce format là, puis en dessous de 1000px cela s'inverse et devient 5% de la largeur car c'est la hauteur qui devient plus importante en mode plus petit écran */
+  color: #484848;
+  -webkit-animation: flash 1.2s linear infinite;
+          animation: flash 1.2s linear infinite;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+    /* on peut mettre deux text-shadow */
+  }
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
+  100% {
+    color: #484848;
+    text-shadow: none;
+  }
+}
+
+@keyframes flash {
+  0% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+    /* on peut mettre deux text-shadow */
+  }
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
+  100% {
+    color: #484848;
+    text-shadow: none;
+  }
+}
+
+/* Création de boucle avec Sass pour éviter de répéter des choses. Ici, on en a besoin pour éviter de répéter la même chose pour chaque span */
+h1 span:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  /* rajoute un délai pour l'animation de chaque span */
+}
+
+h1 span:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  /* rajoute un délai pour l'animation de chaque span */
+}
+
+h1 span:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  /* rajoute un délai pour l'animation de chaque span */
+}
+
+h1 span:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  /* rajoute un délai pour l'animation de chaque span */
+}
+
+h1 span:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  /* rajoute un délai pour l'animation de chaque span */
+}
+
+h1 span:nth-child(6) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  /* rajoute un délai pour l'animation de chaque span */
+}
+
+h1 span:nth-child(7) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+  /* rajoute un délai pour l'animation de chaque span */
+}
+
+h1 span:nth-child(8) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  /* rajoute un délai pour l'animation de chaque span */
+}
+
+h1 span:nth-child(9) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+  /* rajoute un délai pour l'animation de chaque span */
+}
+
+h1 span:nth-child(10) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  /* rajoute un délai pour l'animation de chaque span */
+}
+/*# sourceMappingURL=style.css.map */
